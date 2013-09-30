@@ -14,6 +14,9 @@
   <div ng-view></div>
 
   <div>Angular seed app: v<span app-version></span></div>
+  <div ng-init="value=[{low: '3', high: '50'}, {low: '51', high: '70'}]"></div>
+  <button ng-click="$broadcast('addRange', {low: 0, high: 0})">Add Range</button>
+  <slider min-value="0" max-value="100" value="value" mode="multi-range"/>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>

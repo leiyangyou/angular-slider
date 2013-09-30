@@ -6,6 +6,9 @@
         "karma" : "*",
         "karma-junit-reporter" : "*",    
         "karma-jasmine" : "*",
-        "karma-ng-scenario" : "*"
+        "karma-ng-scenario" : "*",
+        "coffee-script": "*",
+        "stylus": "*",
+        "jade": "*"
     }
 }

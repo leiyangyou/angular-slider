@@ -1,30 +1,15 @@
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
+.menu{list-style:none;border-bottom:.1em solid #000;margin-bottom:2em;padding:0 0 .5em}
+.menu:before{content:"["}
+.menu:after{content:"]"}
+.menu > li{display:inline}
+.menu > li:before{content:"|";padding-right:.3em}
+.menu > li:nth-child(1):before{content:"";padding:0}
+.slider{position:relative;width:100%;display:block;z-index:0;}
+.slider .bar{z-index:1;position:absolute;display:inline-block;width:100%;height:7px;top:25px;background:-webkit-linear-gradient(top, #c0c0c0, #8d8d8d);background:-moz-linear-gradient(top, #c0c0c0, #8d8d8d);background:-o-linear-gradient(top, #c0c0c0, #8d8d8d);background:-ms-linear-gradient(top, #c0c0c0, #8d8d8d);background:linear-gradient(to bottom, #c0c0c0, #8d8d8d);-webkit-box-shadow:inset 2px 2px 5px;box-shadow:inset 2px 2px 5px;-webkit-border-radius:1em/1em;border-radius:1em/1em}
+.slider .selection{z-index:2;position:absolute;display:inline-block;height:7px;background:-webkit-linear-gradient(top, #13b6ff, #00a8f3);background:-moz-linear-gradient(top, #13b6ff, #00a8f3);background:-o-linear-gradient(top, #13b6ff, #00a8f3);background:-ms-linear-gradient(top, #13b6ff, #00a8f3);background:linear-gradient(to bottom, #13b6ff, #00a8f3);top:25px;}
+.slider .selection:hover{background:-webkit-linear-gradient(top, #0093d5, #0093d5);background:-moz-linear-gradient(top, #0093d5, #0093d5);background:-o-linear-gradient(top, #0093d5, #0093d5);background:-ms-linear-gradient(top, #0093d5, #0093d5);background:linear-gradient(to bottom, #0093d5, #0093d5)}
+.slider .pointer-container{z-index:3;position:absolute;display:inline-block;}
+.slider .pointer-container .pointer-label{text-align:center;position:relative;white-space:nowrap}
+.slider .pointer-container .pointer{display:inline-block;width:20px;height:20px;border:1px solid #000;-webkit-border-radius:20px/20px;border-radius:20px/20px;background:#fff;}
+.slider .pointer-container .pointer .pointer-inner{background-color:#808080;width:8px;height:8px;position:relative;top:6px;left:6px;-webkit-border-radius:8px/8px;border-radius:8px/8px}
+.slider .pointer-container .pointer:hover .pointer-inner{background-color:#000}

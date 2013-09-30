@@ -1,2 +1,5 @@
 logs/*
 !.gitkeep
+node_modules
+.idea/
+*.iml
